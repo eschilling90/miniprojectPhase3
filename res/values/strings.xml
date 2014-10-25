@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Connexus</string>
+    <string name="connexus_name">Connexus</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_with_gmail">Login With Gmail</string>
+	<string name="gmail_id">Gmail ID</string>
+	<string name="gmail_password">Gmail Password</string>
+	<string name="login">Login</string>
+	<string name="view_streams">View Streams</string>
+	<string name="find_streams">Find Streams</string>
+	<string name="search">Search</string>
+	<string name="my_subscribed_streams">My Subscribed Streams</string>
+	<string name="nearby">Nearby</string>
+	<string name="view_a_stream">View A Stream</string>
+	<string name="more_pictures">More Pictures</string>
+	<string name="upload_an_image">Upload an Image</string>
+	<string name="streams">Streams</string>
+	<string name="nearby_pictures">Nearby pictures</string>
+	<string name="more">More</string>
+	<string name="view_all_streams">View All Streams</string>
+	<string name="more_search_results">More search results</string>
+	<string name="choose_from_your_library">Choose from your library</string>
+	<string name="use_camera">Use camera</string>
+	<string name="add_message_or_tags">Add a message and/or tags</string>
+	<string name="upload">Upload</string>
+	<string name="take_picture">Take a picture</string>
+	<string name="use_this_picture">Use this picture</string>
+</resources>

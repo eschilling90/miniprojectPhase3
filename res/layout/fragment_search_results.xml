@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.connexus.Connexus$PlaceholderFragment" >
+
+    <EditText
+        android:id="@+id/searchBoxSR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/search" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/searchButtonSR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchBoxSR"
+        android:layout_below="@+id/searchBoxSR"
+        android:text="@string/search" />
+
+    <TextView
+        android:id="@+id/returnMessageSR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchButtonSR"
+        android:layout_below="@+id/searchButtonSR"
+        android:layout_marginTop="18dp"
+        android:text="Return message here"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:id="@+id/streamTableSR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/returnMessageSR"
+        android:layout_below="@+id/returnMessageSR"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/moreButtonSR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/streamTableSR"
+        android:layout_below="@+id/streamTableSR"
+        android:text="@string/more_search_results" />
+
+</RelativeLayout>

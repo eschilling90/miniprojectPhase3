@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.connexus.Connexus$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/connexus_name"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/searchReturnMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="19dp"
+        android:text="View A Stream: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/streamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/searchReturnMessage"
+        android:layout_alignBottom="@+id/searchReturnMessage"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/searchReturnMessage"
+        android:text="NameHere" />
+
+    <LinearLayout
+        android:id="@+id/streamTableVAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchReturnMessage"
+        android:layout_below="@+id/searchReturnMessage"
+        android:layout_marginTop="21dp"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/moreButtonVAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/streamTableVAS"
+        android:layout_below="@+id/streamTableVAS"
+        android:text="@string/more_pictures" />
+
+    <Button
+        android:id="@+id/uploadButtonVAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/moreButtonVAS"
+        android:layout_below="@+id/moreButtonVAS"
+        android:text="@string/upload_an_image" />
+
+    <Button
+        android:id="@+id/streamButtonVAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uploadButtonVAS"
+        android:layout_alignRight="@+id/uploadButtonVAS"
+        android:layout_below="@+id/uploadButtonVAS"
+        android:text="@string/streams" />
+
+</RelativeLayout>
