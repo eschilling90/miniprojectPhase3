@@ -1113,7 +1113,7 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int imageThumbnailC=0x7f05003e;
+        public static final int imageThumbnailC=0x7f05003f;
         public static final int linearLayout1=0x7f05005c;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
@@ -1158,11 +1158,11 @@ containing a value of this type.
         public static final int streamTableSR=0x7f05004a;
         public static final int streamTableVAS=0x7f050053;
         public static final int streamTableVNS=0x7f050057;
-        public static final int streamsButtonC=0x7f050041;
+        public static final int streamsButtonC=0x7f050040;
         public static final int subStreamsButton=0x7f050060;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
-        public static final int takePictureButtonC=0x7f05003f;
+        public static final int takePictureButtonC=0x7f05003e;
         public static final int textView1=0x7f050050;
         public static final int textView2=0x7f05003d;
         public static final int title=0x7f05002b;
@@ -1172,7 +1172,7 @@ containing a value of this type.
         public static final int uploadButtonVAS=0x7f050055;
         public static final int useCameraButtonU=0x7f05004d;
         public static final int useLogo=0x7f050003;
-        public static final int usePictureButtonC=0x7f050040;
+        public static final int usePictureButtonC=0x7f050041;
         public static final int userId=0x7f050046;
         public static final int userPassword=0x7f050045;
         public static final int viewStreamsButtonL=0x7f050043;

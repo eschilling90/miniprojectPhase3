@@ -12,7 +12,9 @@ import android.view.ViewGroup;
 import android.os.Build;
 
 public class Connexus extends ActionBarActivity {
-
+	public static String REQUEST_URL = "http://connexus-app-ui.appspot.com/";
+	public static String username = "";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -20,7 +22,7 @@ public class Connexus extends ActionBarActivity {
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
+					.add(R.id.container, new LoginFragment()).commit();
 		}
 	}
 
@@ -43,22 +45,4 @@ public class Connexus extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	public static class PlaceholderFragment extends Fragment {
-
-		public PlaceholderFragment() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_login,
-					container, false);
-			return rootView;
-		}
-	}
-
 }
