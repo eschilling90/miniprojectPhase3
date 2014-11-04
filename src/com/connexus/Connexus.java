@@ -12,8 +12,8 @@ import android.view.ViewGroup;
 import android.os.Build;
 
 public class Connexus extends ActionBarActivity {
-	public static String REQUEST_URL = "http://connexus-app-ui.appspot.com/";
-	public static String username = "";
+	public static String REQUEST_URL = "http://connexus-web-service.appspot.com/";
+	public static String username = "cl2user@gmail.com";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

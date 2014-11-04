@@ -8,67 +8,104 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.connexus.Connexus$PlaceholderFragment" >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="@string/connexus_name"
-        android:textSize="35sp" />
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-    <LinearLayout
-        android:id="@+id/streamTable"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView2"
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="15dp"
-        android:orientation="vertical" >
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/streamTable"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/streamTable"
-        android:layout_marginTop="22dp" >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="@string/connexus_name"
+                android:textSize="35sp" />
 
-        <EditText
-            android:id="@+id/findStreams"
-            android:layout_width="0dip"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="@string/find_streams" />
+            <LinearLayout
+                android:id="@+id/streamTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/nearbyButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/nearby" />
-    </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/streamTableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </LinearLayout>
 
-    <Button
-        android:id="@+id/searchButtonFS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout1"
-        android:layout_below="@+id/linearLayout1"
-        android:text="@string/search" />
+                <LinearLayout
+                    android:id="@+id/streamTableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </LinearLayout>
 
-    <Button
-        android:id="@+id/subStreamsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/searchButtonFS"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_below="@+id/searchButtonFS"
-        android:layout_marginTop="24dp"
-        android:text="@string/my_subscribed_streams"
-        android:textSize="15sp" />
+                <LinearLayout
+                    android:id="@+id/streamTableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/streamTableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/streamTable"
+                android:layout_marginTop="22dp" >
+
+                <EditText
+                    android:id="@+id/findStreams"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/find_streams" />
+
+                <Button
+                    android:id="@+id/nearbyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nearby" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/searchButtonFS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout1"
+                android:layout_below="@+id/linearLayout1"
+                android:text="@string/search" />
+
+            <Button
+                android:id="@+id/subStreamsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/searchButtonFS"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_below="@+id/searchButtonFS"
+                android:layout_marginTop="24dp"
+                android:text="@string/my_subscribed_streams"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

@@ -46,6 +46,19 @@
         android:layout_below="@+id/returnMessageSR"
         android:orientation="vertical" >
 
+        <LinearLayout
+            android:id="@+id/streamTableRow1SR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/streamTableRow2SR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
     </LinearLayout>
 
     <Button

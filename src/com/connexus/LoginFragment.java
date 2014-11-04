@@ -30,7 +30,7 @@ public class LoginFragment extends Fragment {
 		httpClient.get(Connexus.REQUEST_URL + "viewAllStreams", new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] response) {
-                responseText.setText(Integer.toString(statusCode));
+                //responseText.setText(Integer.toString(statusCode));
             }
 
             @Override

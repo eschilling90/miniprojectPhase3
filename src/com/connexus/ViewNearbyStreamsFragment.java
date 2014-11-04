@@ -8,9 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesClient.ConnectionCallbacks;
+import com.google.android.gms.common.GooglePlayServicesClient.OnConnectionFailedListener;
 import com.loopj.android.http.AsyncHttpClient;
 
-public class ViewNearbyStreamsFragment extends Fragment {
+public class ViewNearbyStreamsFragment extends Fragment implements ConnectionCallbacks, OnConnectionFailedListener {
 	
     private AsyncHttpClient httpClient = new AsyncHttpClient();
 
@@ -36,5 +39,23 @@ public class ViewNearbyStreamsFragment extends Fragment {
 		});
 		
 		return rootView;
+	}
+
+	@Override
+	public void onConnectionFailed(ConnectionResult arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onConnected(Bundle connectionHint) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onDisconnected() {
+		// TODO Auto-generated method stub
+		
 	}
 }
