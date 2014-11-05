@@ -561,6 +561,16 @@ class MapDate(webapp2.RequestHandler):
 		logging.info({'imageList': result})
 		self.response.write(self.request.get("callback") + "(" + json.dumps({'imageList': result}) + ")")
 
+class NearbyImages(webapp2.RequestHandler):
+	def post(self):
+		result = []
+		for image in cImage.query():
+			stream = cStream.query(cStream.streamId == image.streamId).get()
+			if (stream):
+				url = images.get_serving_url(image.blobKey)
+				result.append({'streamId': image.streamId, 'streamname': stream.streamName, 'url': url, 'lat': image.lat, 'lon': image.lon})
+		self.response.write(json.dumps(result))
+
 application = webapp2.WSGIApplication([
 	('/loginuser', LoginUser),
 	('/management', Management),
@@ -579,5 +589,6 @@ application = webapp2.WSGIApplication([
 	('/sendEmail1',SendEmail1),
 	('/sendEmail24',SendEmail24),
 	('/search',SearchStreams),
-	('/map',MapDate)
+	('/map',MapDate),
+	('/nearbyImages', NearbyImages)
 ], debug = True)
