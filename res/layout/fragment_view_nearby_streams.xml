@@ -27,6 +27,34 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="15dp"
         android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/streamTableRow1VNS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/streamTableRow2VNS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/streamTableRow3VNS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/streamTableRow4VNS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
     </LinearLayout>
 
     <TextView
